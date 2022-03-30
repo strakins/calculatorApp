@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .button  { 
+        @apply bg-white py-3 font-bold shadow-xl text-lg text-center mb-2 rounded-lg hover:bg-gray-300 
+    } 
+}
