@@ -13,7 +13,11 @@ items.map(button => {
                 output.innerHTML = output.innerHTML.slice(0, -1)
                 break;
             case "=" :
-                output.innerHTML = eval(output.innerHTML)
+                try {
+                    output.innerHTML = eval(output.innerHTML)
+                }catch {
+                    output.innerHTML = "Error!" 
+                }
                 break;
             default: 
             output.innerHTML += e.target.innerText
