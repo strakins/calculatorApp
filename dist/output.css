@@ -473,8 +473,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   text-align: center;
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -487,6 +487,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 .button:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
 }
 
 .mb-3 {
@@ -539,6 +546,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   place-content: center;
 }
 
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .gap-5 {
   gap: 1.25rem;
 }
@@ -574,6 +589,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-16 {
+  padding: 4rem;
 }
 
 .py-2 {
@@ -623,6 +642,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
+  .md\:p-8 {
+    padding: 2rem;
+  }
+
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
